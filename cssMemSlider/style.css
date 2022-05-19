@@ -5,8 +5,10 @@ body {
 }
 
 .wrapper {
-    max-width: 800px;
+    max-width: 580px;
     margin: 0 auto;
+    padding-top: 15px;
+    
 }
 
 
