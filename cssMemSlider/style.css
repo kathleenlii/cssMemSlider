@@ -1,0 +1,128 @@
+body {
+    background-color: #ff7fbb;
+    color: #fff;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+    padding-top: 15px;
+    
+}
+
+
+.slider__items {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mem {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 1.56% auto;
+}
+
+.item-text {
+    display: none;
+    font-family: Syne Tactile;
+    font-size: 125%;
+}
+
+.block__nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav:hover .btn{
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+.nav:active .btn {
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+input {
+    display: none;
+}
+
+.btn {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    border-radius: 50%;
+    border: 2px solid #f13d76;
+    background-color: #f13d76;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    border: 2px solid #fff;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: #fff;
+    border: 2px solid #fff;
+    transform: scale(1.1);
+}
+
+#slide4:checked ~ .slider__items > .m1 {
+    margin-left: 0;
+}
+#slide3:checked ~ .slider__items > .m1 {
+    margin-left: -100%;
+}
+#slide2:checked ~ .slider__items > .m1 {
+    margin-left: -200%;
+}
+#slide1:checked ~ .slider__items > .m1 {
+    margin-left: -300%;
+}
+
+#slide4:checked ~ .block > .block__nav > .nav > .item4,
+#slide3:checked ~ .block > .block__nav > .nav > .item3,
+#slide2:checked ~ .block > .block__nav > .nav > .item2,
+#slide1:checked ~ .block > .block__nav > .nav > .item1 {
+    background-color: transparent;
+}
+
+#slide4:checked ~ .block > .block__text > .text4,
+#slide3:checked ~ .block > .block__text > .text3,
+#slide2:checked ~ .block > .block__text > .text2,
+#slide1:checked ~ .block > .block__text > .text1 {
+    display: block;
+	transition: 0.5s;
+	transform: translateX(0);
+}
+
+@media (max-width: 440px) {
+    .block {
+        flex-direction: column-reverse;
+    }
+
+    .block__text {
+        margin-top: 1.56%;
+    }
+}
