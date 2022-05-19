@@ -5,47 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="cssMemSlider/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>CssMemSlider</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <input type="radio" name="slide" id="slide1" checked />
-        <input type="radio" name="slide" id="slide2" />
+        <input type="radio" name="slide" id="slide4" checked />
         <input type="radio" name="slide" id="slide3" />
-        <input type="radio" name="slide" id="slide4" />
-        <div class="slider">
+        <input type="radio" name="slide" id="slide2" />
+        <input type="radio" name="slide" id="slide1" />
 
-            <div class="slider__items">
-                <img src="cssMemSlider/img/mem4.jpg" alt="mem" />
-                <img src="cssMemSlider/img/mem3.jpg" alt="mem" />
-                <img src="cssMemSlider/img/mem2.jpg" alt="mem" />
-                <img src="cssMemSlider/img/mem1.jpg" alt="mem" />
+
+        <div class="slider__items">
+            <img class="mem m1" src="./img/mem4.jpg" alt="mem" />
+            <img class="mem" src="./img/mem3.jpg" alt="mem" />
+            <img class="mem" src="./img/mem2.jpg" alt="mem" />
+            <img class="mem" src="./img/mem1.jpg" alt="mem" />
+        </div>
+
+        <div class="block">
+
+            <div class="block__text">
+                <div class="item-text text4"> Me: когда все поломала и не успеваешь к дедлайну</div>
+                <div class="item-text text3">
+                    Как бы хорошо ты ни знал англйиский, 25 years ты прочитаешь как "двадцать пять еарс"
+                </div>
+                <div class="item-text text2"> А я гворила, вкладывайся в меня</div>
+                <div class="item-text text1"> About me</div>
             </div>
 
-            <div class="slider__text">
-                <div class="text-block">
-                    <p class="item-text text4"> Me: когда все поломала и не успеваешь к дедлайну</p>
-                    <p class="item-text text3">
-                        Как бы хорошо ты ни знал англйиский, 25 years ты прочитаешь как "двадцать пять еарс"
-                    </p>
-                    <p class="item-text text2"> А я гворила, вкладывайся в меня</p>
-                    <p class="item-text text1"> About me</p>
-                </div>
-
-                <div class="slider__nav">
-                    <label class="nav" for="slide4"><span class="btn item4"></span></label>
-                    <label class="nav" for="slide3"><span class="btn item3"></span></label>
-                    <label class="nav" for="slide2"><span class="btn item2"></span></label>
-                    <label class="nav" for="slide1"><span class="btn item1"></span></label>
-                </div>
+            <div class="block__nav">
+                <label class="nav" for="slide4"><span class="btn item4"></span></label>
+                <label class="nav" for="slide3"><span class="btn item3"></span></label>
+                <label class="nav" for="slide2"><span class="btn item2"></span></label>
+                <label class="nav" for="slide1"><span class="btn item1"></span></label>
             </div>
+
         </div>
     </div>
-
-    <script type="text/javascript" src="main.js"></script>
 
 </body>
 
